@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!-- Template by Quackit.com and customized for the arcade game piarates passage by Bob Ingram at The Paramount Group.us-->
+<!-- Images by various sources under the Creative Commons CC0 license and/or the Creative Commons Zero license. 
+Although you can use them, for a more unique website, replace these images with your own. -->
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+ 	<meta name="description" content="Bob ingram is the owner of the Website and Internet Marketing company The Paramount Group.us. Arcade Game Pirates Passage is Project 3 for Udacity Front End Developer Course.">
+    <link rel="shortcut icon" href="images/pg-colored-favcon.jpg">
+    <title>Bob's arcade game</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS: You can use this stylesheet to override any Bootstrap styles and/or apply your own styles -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom Fonts from Google -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+    <!-- Header displays background image of sharks, Name of the project and buttons to play game and see instructions-->
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1>Bob's Arcade Game Pirates Passage</h1>
+                <p>Udacity Front End Developer Course Project 3</p>
+                <a href="playgame.html" class="btn btn-primary btn-lg">Play Game</a>
+                <br>
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#instructions" alt="instructions">instructions</button>
+            </div>
+        </div>
+    </header>
+    <!-- Modal code obtained from Udacity lesson. The modal is placed close to the button that is calling it. The instructions button above-->
+    <div class="modal fade" id="instructions" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="myModalLabel1">Play Instructions<br>Bob's Pirate Passage Game</h2>
+                    <img class="img-responsive pirate-ship" sizes="100vw" src="images/shark-chomping.gif" alt="animated gif of shark game piece"> This arcade game project is based on the classic frogger game. The majority of the code was provided by Udacity Front End Developer course. The game was made Udacious by Bob Ingram
+                    <br>
+                    <br> 1. The object is reach the the top of the game board
+                    <br>
+                    <br> 2. Use arrow keys to control player movement
+                    <br>
+                    <br> 3. If you are eaten by a shark the player will be reset
+                    <br>
+                    <br> 4. Press quit to exit the game
+                </div>
+                < <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- Content 1 Short bio for Bob Ingram and link to his portfolio project-->
+    <section class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="images/pirate-ship-lg.gif" alt="pirate ship game piece" class="img-responsive img-circle center-block" title="pirate ship">
+                </div>
+                <div class="col-sm-6">
+                    <h2 class="section-header">Bob Ingram</h2>
+                    <p class="lead text-muted">Bob is the owner of the The Paramount Group.us which is a internet marketing and website design company located in Satellite Beach, FL</p>
+                    <a href="http://www.paramountmedia.us/" target="_blank" class="btn btn-primary btn-lg">portfolio</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer contains contact information and copyright notice-->
+    <footer class="page-footer">
+
+        <!-- Contact Us -->
+        <div class="contact">
+            <div class="container">
+                <h2 class="section-heading">Contact Bob</h2>
+                <p><span class="glyphicon glyphicon-earphone"></span>
+                    <br>321-345-8288</p>
+                <p><span class="glyphicon glyphicon-envelope"></span>
+                    <br>bob@theparamountgroup.us</p>
+            </div>
+        </div>
+
+        <!-- Copyright etc -->
+        <div class="small-print">
+            <div class="container">
+                <p>Copyright 2015 &copy; The Paramount Group.us</p>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Custom Javascript -->
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+body {
+    text-align: center;
+}
+
+.quit-button {
+    text-decoration: none;
+    alignment: center;
+    paddding: 500px;
+}
+
+.game-name {
+    color: black;
+}
+
