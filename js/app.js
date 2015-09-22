@@ -1,10 +1,10 @@
 // JavaScript Document
 
 /*
-    Pirates Passage - Classic Arcade Game, Udacity - Front End Web Developer project 3
-    ---------------------------------- 
-    Bob Ingram - September 20, 2015
-    ----------------------------------
+	Pirates Passage - Classic Arcade Game, Udacity - Front End Web Developer project 3
+	---------------------------------- 
+	Bob Ingram - September 20, 2015
+	----------------------------------
 	
 	This app.js is the primary work space of project 3. In this file the player and enemies are 
 	instantiated updated and rendered with the assistance of engine.js and resources.js files. 
@@ -18,11 +18,11 @@
 
 // Enemies our player must avoid
 var Enemy = function(x, y) {
-    // Variables applied to each of our instances go here,
-    // we've provided one for you to get started
+// Variables applied to each of our instances go here,
+// we've provided one for you to get started
 
-    // The image/sprite for our enemies, this uses
-    // a helper we've provided to easily load images
+// The image/sprite for our enemies, this uses
+// a helper we've provided to easily load images
 	
 	this.sprite = 'images/shark-fin2.png';
 	this.x = x;
@@ -34,10 +34,10 @@ var Enemy = function(x, y) {
 
 
 Enemy.prototype.update = function(dt) {
-	
-    // You should multiply any movement by the dt parameter
-    // which will ensure the game runs at the same speed for
-    // all computers.
+
+// You should multiply any movement by the dt parameter
+// which will ensure the game runs at the same speed for
+// all computers.
 	
 	var randomSpeed = Math.floor((Math.random() * 400) + 1) * dt; 
 	//randomSpeed is used to make enemies travel different speeds
@@ -46,7 +46,7 @@ Enemy.prototype.update = function(dt) {
 		this.x = -100; // send enemy back to left side of canvas
 	}
 	
-	// Check for collisions if player and enemy cooridinates are within 40px player is reset
+	// Check for collisions if player and enemy cooridinates are within 50px player is reset
 	var checkCollisionsx = Math.abs(this.x - player.x);
 	var checkCollisionsy = Math.abs(this.y - player.y);
 	if ((checkCollisionsx < 50) && (checkCollisionsy < 50)) { 
@@ -56,7 +56,7 @@ Enemy.prototype.update = function(dt) {
 
 // Draw the enemy on the screen, required method for game
 Enemy.prototype.render = function() {
-    ctx.drawImage(Resources.get(this.sprite), this.x, this.y); 
+	ctx.drawImage(Resources.get(this.sprite), this.x, this.y); 
 //this.sprite is the enemies passed to global object Resources in resources.js file
 };
 
@@ -72,6 +72,7 @@ var Player = function(x,y) {
 };
 
 Player.prototype.update = function() { 
+//This function is not used in my implementation but necessary to function with engine.js and resources.js
 };
 
 Player.prototype.render = function() {
